@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+
+<body>
+    <form id="form" onsubmit="func(event)">
+        <div>
+            <input class="text" type="email" required placeholder="Enter your email" id="email" aria-describedby="emailHelp">
+        </div>
+
+        <div>
+            <input class="text" type="password" id="password1" required aria-describedby="" placeholder="Enter your password">
+        </div>
+
+        <div>
+            <input class="text" type="text" required name="firstName" id="firstName" placeholder="First Name">
+        </div>
+        <div>
+            <input class="text" type="text" required name="lastName" id="Last Name" placeholder="Last Name">
+        </div>
+
+
+
+
+        <div class="check">
+            <div>
+                <input type="radio" name="gender" value="male"> Male
+            </div>
+            <div>
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div>
+                <input type="radio" name="gender" value="others"> Others
+            </div>
+        </div>
+
+        <div class="agree">
+            <input required type="checkbox"><label>I agree to MeetNutz terms and conditions</label>
+        </div>
+        <input type="submit" class="btn" value="Sign up">
+        <!-- <button class="btn" id="bt" type="submit">Sign up</button> -->
+        <script>
+            function func(event){
+                event.preventDefault();
+                localStorage["f"]=event.target['firstName'].value;
+                localStorage["l"]=event.target['lastName'].value;
+                window.location.href = "final.html";
+            }
+
+        </script>
+        <script type="text/javascript" src="./script.js"></script>
+
+    </form>
+</body>
+<style>
+    body::before {
+        content: "";
+        top: 0px;
+        position: absolute;
+        background: url('./images/bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        /* border: 2px solid red; */
+        /* padding: 0px; */
+        margin: 0px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 140px;
+    }
+
+    form {
+        margin-left: 100px;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Paaji 2', cursive;
+        margin: 0px 10px;
+        color: white;
+        background-color: #2d2324cf;
+        padding: 3px 5px;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        /* border-block-color: black; */
+        display: block;
+        width: 35%;
+        margin: 20px auto;
+    }
+
+    /* d7d0b28f */
+    .text {
+        background-color: #312f23a8;
+        font-family: 'Baloo Paaji 2', cursive;
+        text-align: center;
+        display: block;
+        border: 2px solid black;
+        margin: 35px auto;
+        font-size: 20px;
+        width: 500px;
+        border-radius: 20px;
+        color: #eae1bc;
+    }
+
+    input:focus {
+        background-color: #ecd9e45c;
+        border-radius: 0px;
+        color: black;
+        font-weight: 600;
+    }
+
+    div {
+        margin: 1px;
+    }
+
+    /* 380906 */
+    /* how to change colour of placeholder is sown below */
+    input::placeholder {
+        color: white;
+        font-size: 20px;
+    }
+
+
+    .check {
+        /* border: 2px solid red; */
+        margin-top: 18px;
+        color: #221a1b;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Baloo Paaji 2', cursive;
+        font-size: 19px;
+    }
+
+    .check div {
+        /* border: 2px solid red; */
+        display: inline-block;
+        margin: 0px 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .agree {
+        color: #221a1b;
+        font-weight: bold;
+        font-family: 'Baloo Paaji 2', cursive;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,115 @@
+.container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  /* justify-content: center; */
+}
+.navTitle {
+  display: inline-block;
+  /* border: 2px solid #26e015; */
+  font-size: 62px;
+  font-weight: bold;
+  color: #031a6f; 
+  font-family: 'KoHo', sans-serif;  margin-left: 320px;
+  /* margin-top: 12px; */
+}
+.navElement {
+  display: inline-block;
+  /* border: 2px solid rgb(29, 23, 23); */
+  margin-left: 480px;
+}
+.navInside {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: space-between;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+.bodyElement{
+    /* display: inline-block; */
+    margin: 0px;
+    /* border: 2px solid blue; */
+}
+#b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+#b2{
+    width: 40%;
+}
+#butt1{
+    margin-right:80px;
+}
+.butt{
+    padding: 10px 35px;
+    font-size: 19px;
+    border-radius: 20px;
+    background-color: #804866;
+    color: azure;
+    width: 270px;
+}
+.btnSignUp {
+  font-family: 'Baloo Paaji 2', cursive;
+  color: white;
+  background-color: #1f5da7;
+  padding: 4px 80px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.features{
+    /* border: 2px solid blue; */
+    /* margin-left: -200px;  */
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    font-size: 19px; 
+    padding: 10px 0px;
+}
+footer{
+    /* border: 2px solid blue; */
+    position: absolute;
+    bottom: 9px;
+    width: 97%;
+    /* padding-left: 4px; */
+    margin: 0px;
+    margin-left: 0px;
+}
+.footer{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    /* border: 2px solid blue; */
+    list-style-type: none;
+    /* margin-right:500px ; */
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(33 54 129 / 86%);
+    border-radius: 10px;
+
+
+}
+.footer a{
+    /* border: 2px solid blue; */
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1px 20px;
+    border-radius: 10px;
+    color: azure;
+}
